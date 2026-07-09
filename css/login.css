@@ -1,0 +1,57 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.login{
+    /* background-color: tomato; */
+    text-align: center;
+    margin-top: 170px;
+    font-size: 32px;
+}
+.mail,
+.password{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 8px; 
+    font-size: 20px;
+    margin-bottom: -3px;
+}
+.textbox{
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: #BFECEF;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.forgot{
+    display: block;
+    /* background-color: aqua; */
+    color: #272343;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #272343;
+    font-size: 24px;
+    background-color: #FFE558;
+    border-radius: 20px;
+    height: 65px;
+    /* line-height: 65px;
+    text-align: center; */
+    margin-top: 75px;
+}

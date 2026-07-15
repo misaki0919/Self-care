@@ -65,9 +65,8 @@ body{
         flex-wrap: wrap;
         li{
             list-style: none;
-            
-            
-            
+            width: 50%;
+            background-color: #FFFFFF;
         }
     }
     /* .images_wrap{
@@ -84,7 +83,7 @@ body{
             padding: 10px 10px;
         } */
     } 
-
+}
 .next{
     font-size: 20px;
     background-color: #FFE558;

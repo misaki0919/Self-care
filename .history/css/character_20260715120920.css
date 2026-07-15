@@ -65,8 +65,8 @@ body{
         flex-wrap: wrap;
         li{
             list-style: none;
-            
-            
+            width: 50%;
+            height: 50%;
             
         }
     }

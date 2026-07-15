@@ -64,9 +64,11 @@ body{
         justify-content: space-between;
         flex-wrap: wrap;
         li{
+            background-color: tomato;
             list-style: none;
-            
-            
+            width: 50%;
+            height: 50%;
+            color: #FFFFFF;
             
         }
     }

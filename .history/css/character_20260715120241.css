@@ -59,15 +59,12 @@ body{
         padding-bottom: 23px;
     }
     ul{
-        /* background-color: tomato; */
+        background-color: tomato;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         li{
             list-style: none;
-            
-            
-            
         }
     }
     /* .images_wrap{
@@ -83,8 +80,8 @@ body{
             border-radius: 20px;
             padding: 10px 10px;
         } */
-    } 
-
+    } */
+}
 .next{
     font-size: 20px;
     background-color: #FFE558;

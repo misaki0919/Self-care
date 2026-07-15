@@ -1,0 +1,33 @@
+body{
+    background-color: #FFFFFE;
+    /* margin: 0 24px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+p{
+    /* background-color: tomato; */
+    margin-top: -9px;
+    height: 100vh;
+    font-size: 48px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272343;
+    
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.logo{
+    /* background-color: tomato; */
+    margin-top: 250px;
+}
+

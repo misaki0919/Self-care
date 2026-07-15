@@ -1,0 +1,26 @@
+body{
+    background-color: #FFFFFE;
+    /* margin: 0 24px; */
+}
+p{
+    /* background-color: tomato; */
+    margin-top: -9px;
+    height: 100vh;
+    font-size: 48px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272343;
+    
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.logo{
+    /* background-color: tomato; */
+    margin-top: 250px;
+}
+

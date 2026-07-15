@@ -1,0 +1,11 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}

@@ -1,0 +1,109 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.circle_wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 76px;
+    gap: 16px;
+    align-items: center;
+    .diffrent_circle{
+        width: 30px;
+        height: 30px;
+        background-color: #E3F6F5;
+        border-radius: 50%;
+        
+    }
+    .circle{
+        width: 18px;
+        height: 18px;
+        background-color: #E3F6F5;
+        border-radius: 50%;
+        text-align: center;
+        
+    }
+}
+.support{
+    font-size: 16px;
+    margin: 26px 38px 0 0;
+}
+.choose{
+    font-size: 16px;
+    background-color: #BAE8E8;
+    border-radius: 20px;
+    width: 233px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 35px;
+    margin-top: 38px;
+}
+.wrap{
+    background-color: #BAE8E8;
+    height: 570px;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    padding-left: 14px;
+    padding-right: 14px;
+    .care{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding:0;
+        gap: 28px;
+        
+
+        li{
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            list-style: none;
+            height: 140px;
+            width: 160px;
+            align-items: center;
+            font-size: 20px;
+            
+            
+        }
+    }
+}
+
+
+
+
+.next{
+    font-size: 20px;
+    background-color: #FFE558;
+    border-radius: 20px;
+    padding: 16px 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #272343; 
+    box-shadow: #7b7b7b 0px 4px 4px 0px;
+}
+images-wrap{
+    position: relative;
+}
+.images{
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    /* background-color: tomato; */
+    margin-right: 30px;
+}

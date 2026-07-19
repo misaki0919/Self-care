@@ -1,0 +1,97 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.circle_wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 76px;
+    gap: 16px;
+    align-items: center;
+    .diffrent_circle{
+        width: 30px;
+        height: 30px;
+        background-color: #E3F6F5;
+        border-radius: 50%;
+        
+    }
+    .circle{
+        width: 18px;
+        height: 18px;
+        background-color: #E3F6F5;
+        border-radius: 50%;
+        text-align: center;
+        
+    }
+}
+
+.welcome{
+    /* background-color: tomato; */
+    margin-top: 45px;
+    font-size: 13px;
+    
+}
+.reset{
+    font-size: 16px;
+    background-color: #BAE8E8;
+    border-radius: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+    width: 206px;
+    margin: 20px auto;
+}
+.how_to_call{
+    font-size: 17px;
+    
+}
+.textbox{
+    color: #969696;
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0 16px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+.wrap{
+    /* background-color: tomato; */
+    border-radius: 20px;
+    background-color: #BAE8E8;
+    padding: 17px 20px 0;
+    height: 160px;
+    margin: 40px 0 120px;
+
+}
+.next{
+    font-size: 20px;
+    background-color: #FFE558;
+    border-radius: 20px;
+    padding: 16px 130px;
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: none;
+    color: #272343; 
+    box-shadow: #7b7b7b 0px 4px 4px 0px;
+}
+.images_wrap{
+    position: relative;
+
+}
+.images{
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    /* background-color: tomato; */
+}

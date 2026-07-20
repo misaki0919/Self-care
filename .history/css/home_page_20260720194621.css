@@ -1,0 +1,195 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/* .header-wrap{
+    background-color: #BAE8E8;
+    width: 428px;
+    height: 170px;
+    .ge-ji{
+        text-align: center;
+        padding: 69px;
+        font-size: 14px;
+    }
+    .images-wrap-1{
+        background-color: tomato;
+        
+    }
+} */
+
+
+.header-wrap{
+    background:#BAE8E8;
+    padding:30px 24px;
+}
+
+.ge-ji{
+    font-size:16px;
+    padding: 16px;
+    margin-bottom:12px;
+    text-align: center;
+}
+
+.images-wrap-1{
+    display:flex;
+    align-items:center;
+    margin-bottom:-42px;
+    position:relative;
+    z-index:2;
+}
+
+.images-wrap-1 img:first-child{
+    width:52px;
+    height:52px;
+}
+
+.images-wrap-1 img:last-child{
+    width:24px;
+    position:absolute;
+    left:14px;
+}
+
+.images-wrap-2{
+    position:relative;
+}
+
+.images-wrap-2 img:first-child{
+    width:100%;
+    display:block;
+}
+
+.images-wrap-2 img:last-child{
+    position:absolute;
+    left:0;
+    top:0;
+    width:78%;
+}
+
+/* ===== 吹き出し ===== */
+
+.word-wrap{
+    position:relative;
+    width:280px;
+    margin:22px auto 46px;
+}
+
+.word-wrap img{
+    width:100%;
+    display:block;
+}
+
+.word-wrap p{
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* ===== キャラクター ===== */
+
+body>img{
+    width:250px;
+    display:block;
+    margin:0 auto;
+}
+
+.name{
+    font-size:20px;
+    margin-top:7px;
+    margin-bottom:35px;
+}
+
+/* ===== 実績 ===== */
+
+.continue-wrap,
+.did-wrap{
+    width:120px;
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.continue-wrap{
+    margin-right:40px;
+}
+
+.did-wrap{
+    margin-left:40px;
+}
+
+.continue-wrap img,
+.did-wrap img{
+    width:36px;
+    margin-bottom:4px;
+}
+
+.continue,
+.did{
+    font-size:18px;
+    line-height:1.5;
+}
+
+/* ===== ボタン ===== */
+
+.record-wrap{
+    margin:35px 24px 46px;
+}
+
+.record-wrap a{
+    background:#FFE558;
+    border-radius:50px;
+    height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#272343;
+    box-shadow:0 6px 8px rgba(0,0,0,.2);
+}
+
+.record-wrap img{
+    width:34px;
+    margin-right:16px;
+}
+
+.today-record{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* ===== フッター ===== */
+
+.footer-wrap{
+    background:#BAE8E8;
+    height:90px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.footer-wrap div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#272343;
+}
+
+.footer-wrap img{
+    width:38px;
+    margin-bottom:4px;
+}
+
+.footer-wrap p{
+    margin:0;
+    font-size:14px;
+}

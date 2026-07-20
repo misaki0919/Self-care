@@ -83,7 +83,6 @@ body{
     position:relative;
     width:280px;
     margin:22px auto 46px;
-    
 }
 
 .word-wrap img{
@@ -155,7 +154,6 @@ body>img{
 
 .record-wrap{
     margin:35px 24px 46px;
-    
 }
 
 .record-wrap a{
@@ -186,7 +184,6 @@ body>img{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    text-align: center;
 }
 
 .footer-wrap div{
@@ -194,14 +191,6 @@ body>img{
     flex-direction:column;
     align-items:center;
     color:#272343;
-    a{
-        text-decoration: none;
-        .record-word{
-            /* background-color: tomato; */
-            margin-right: 3px;
-            margin-left: -5px;
-        }
-    }
 }
 
 .footer-wrap img{
@@ -212,5 +201,4 @@ body>img{
 .footer-wrap p{
     margin:0;
     font-size:14px;
-    color: #272343;
 }

@@ -83,7 +83,6 @@ body{
     position:relative;
     width:280px;
     margin:22px auto 46px;
-    
 }
 
 .word-wrap img{
@@ -194,14 +193,6 @@ body>img{
     flex-direction:column;
     align-items:center;
     color:#272343;
-    a{
-        text-decoration: none;
-        .record-word{
-            /* background-color: tomato; */
-            margin-right: 3px;
-            margin-left: -5px;
-        }
-    }
 }
 
 .footer-wrap img{
@@ -213,4 +204,5 @@ body>img{
     margin:0;
     font-size:14px;
     color: #272343;
+    text-decoration: none;
 }

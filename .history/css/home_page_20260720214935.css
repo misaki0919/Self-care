@@ -28,7 +28,6 @@ body{
 .header-wrap{
     background:#BAE8E8;
     padding:30px 24px;
-    width: 428px;
 }
 
 .ge-ji{
@@ -45,45 +44,43 @@ body{
     position:relative;
     z-index:2;
     margin-left: -15px;
-    
     .white{
-        width: 40px;
-        height:40px;
-        /* background-color: tomato; */
+    width: 52px;
+    height:52px;
+    /* background-color: tomato; */
     }
     .heart{
-        width: 32px;
-        position:absolute;
-        left:4px;
-    
+    width: 32px;
+    position:absolute;
+    left:10px;
     /* background-color: tomato; */
     }
 }
 
 .images-wrap-2{
     position:relative;
-    .white-1{
-        width: 326px;
-        display:block;
-        margin-left: 40px;
-    }
-    .yellow{
-        position:absolute;
-        left:0;
-        top:0;
-        width: 250px;
-        margin-left: 40px;
-        
-    }
 }
 
+.images-wrap-2 img:first-child{
+    width: 326px;
+    display:block;
+    margin-left: 40px;
+}
 
+.images-wrap-2 img:last-child{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 257px;
+    margin-left: 40px;
+}
+
+/* ===== 吹き出し ===== */
 
 .word-wrap{
     position:relative;
     width:280px;
     margin:22px auto 46px;
-    
 }
 
 .word-wrap img{
@@ -91,9 +88,9 @@ body{
     display:block;
 }
 
-.time{
+.word-wrap p{
     position:absolute;
-    bottom:40px;
+    top:20px;
     left:50%;
     transform:translateX(-50%);
     margin:0;
@@ -101,20 +98,21 @@ body{
     font-weight:bold;
 }
 
+/* ===== キャラクター ===== */
+
 body>img{
-    width:300px;
+    width:250px;
     display:block;
     margin:0 auto;
-    /* background-color: tomato; */
 }
 
 .name{
     font-size:20px;
     margin-top:7px;
-    margin-bottom:0;
-    text-align: center;
+    margin-bottom:35px;
 }
 
+/* ===== 実績 ===== */
 
 .continue-wrap,
 .did-wrap{
@@ -122,40 +120,32 @@ body>img{
     display:inline-flex;
     flex-direction:column;
     align-items:center;
-    text-align: center;
-    margin-top: 15px;
 }
 
 .continue-wrap{
-    margin-left:40px;
-
+    margin-right:40px;
 }
 
 .did-wrap{
-    margin-left:80px;
+    margin-left:40px;
 }
 
-.continue-wrap img{
-    width:40px;
-    margin-bottom:0px;
-    
-}
+.continue-wrap img,
 .did-wrap img{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0px;
+    width:36px;
+    margin-bottom:4px;
 }
 
 .continue,
 .did{
     font-size:18px;
     line-height:1.5;
-    
 }
+
+/* ===== ボタン ===== */
 
 .record-wrap{
     margin:35px 24px 46px;
-    
 }
 
 .record-wrap a{
@@ -180,13 +170,14 @@ body>img{
     font-weight:bold;
 }
 
+/* ===== フッター ===== */
+
 .footer-wrap{
     background:#BAE8E8;
     height:90px;
     display:flex;
     justify-content:space-around;
     align-items:center;
-    text-align: center;
 }
 
 .footer-wrap div{
@@ -194,14 +185,6 @@ body>img{
     flex-direction:column;
     align-items:center;
     color:#272343;
-    a{
-        text-decoration: none;
-        .record-word{
-            /* background-color: tomato; */
-            margin-right: 3px;
-            margin-left: -5px;
-        }
-    }
 }
 
 .footer-wrap img{
@@ -212,5 +195,4 @@ body>img{
 .footer-wrap p{
     margin:0;
     font-size:14px;
-    color: #272343;
 }

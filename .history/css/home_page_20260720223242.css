@@ -83,7 +83,6 @@ body{
     position:relative;
     width:280px;
     margin:22px auto 46px;
-    
 }
 
 .word-wrap img{
@@ -197,9 +196,7 @@ body>img{
     a{
         text-decoration: none;
         .record-word{
-            /* background-color: tomato; */
-            margin-right: 3px;
-            margin-left: -5px;
+            
         }
     }
 }

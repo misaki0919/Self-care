@@ -80,14 +80,18 @@ body{
     font-size: 20px;
     background-color: #FFE558;
     border-radius: 20px;
-    padding: 16px 160px;
     text-align: center;
     text-decoration: none;
     color: #272343; 
+    padding: 16px 160px;
     box-shadow: #7b7b7b 0px 4px 4px 0px;
+    /* width heightでつける */
+    
 }
 .images_wrap{
     position: relative;
+    /* width: 382px;
+    height: 57px; */
     
 
 }

@@ -1,0 +1,136 @@
+body{
+    background-color: #FFFFFE;
+    color: #272343;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.footer-wrap{
+    background:#BAE8E8;
+    height:90px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align: center;
+    .record{
+        /* background-color: tomato; */
+        padding-left: 10px;
+        text-align: center;
+        .word{
+            margin-right: 7px;
+        }
+    }
+}
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.do-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 80px;
+    padding: 0 24px;
+}
+
+.do{
+    font-size: 28px;
+    color: #2D2855;
+}
+
+.do-wrap img{
+    width: 54px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.do-wrap img:last-child{
+    width: 89px;
+    height: auto;
+    margin-left: -12px;
+}
+
+
+.record-wrap{
+    width: 382px;
+    height: 63px;
+    background: #FFE266;
+    padding-right: 24px;
+    /* object-fit: contain;
+    flex-shrink: 0; */
+    /* background-color: tomato; */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 18px;
+}
+
+.record-wrap img{
+    width: 30px;
+    height: 33px;
+    margin-right: 20px;
+    /* flex-shrink: 0; */
+    margin-left: 24px;
+    
+}
+
+.word{
+    font-size: 22px;
+    color: #2D2855;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    margin-right: 0;
+}
+
+
+.circle{
+    margin-left: auto;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+}
+
+.footer-wrap{
+    margin-top: 42px;
+}
+.footer-wrap div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#272343;
+    a{
+        text-decoration: none;
+        .record-word{
+            /* background-color: tomato; */
+            margin-right: 3px;
+            margin-left: -5px;
+        }
+    }
+}
+
+.footer-wrap img{
+    width:38px;
+    margin-bottom:4px;
+}
+
+.footer-wrap p{
+    margin:0;
+    font-size:14px;
+    color: #272343;
+}

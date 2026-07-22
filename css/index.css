@@ -33,7 +33,7 @@ body{
 
 .ge-ji{
     font-size:16px;
-    padding-top: 16px;
+    padding-top: 30px;
     margin-bottom:12px;
     text-align: center;
 }
@@ -101,10 +101,14 @@ body{
 }
 
 body>img{
-    width:300px;
+    /* width:300px; */
     display:block;
     margin:0 auto;
-    /* background-color: tomato; */
+    
+}
+
+.img{
+    margin-top: -30px;
 }
 
 .name{
@@ -153,7 +157,7 @@ body>img{
 }
 
 .record-wrap{
-    margin:35px 24px 46px;
+    margin:25px 24px 35px;
     
 }
 
@@ -177,6 +181,7 @@ body>img{
 .today-record{
     font-size:18px;
     font-weight:bold;
+    
 }
 
 .footer-wrap{
@@ -186,6 +191,14 @@ body>img{
     justify-content:space-around;
     align-items:center;
     text-align: center;
+    .record{
+        /* background-color: tomato; */
+        padding-left: 10px;
+        text-align: center;
+        .word{
+            margin-right: 7px;
+        }
+    }
 }
 
 .footer-wrap div{

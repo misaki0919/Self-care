@@ -83,6 +83,7 @@ body{
             width:163px;
             height: 144px;
             background-color: #FFFFFF;
+            position: relative;
             img{
                 flex-shrink: 0;
             }
@@ -101,15 +102,17 @@ body{
                 border-radius:20px;
             }
         }
-        input[type="checkbox"] + label{
+        input[type="radio"] + label{
             border: solid 1px tomato;
             border: none;
             width:163px;
             height: 144px;
         }
-        input[type="checkbox"]:checked + label{
+        input[type="radio"]:checked + label{
             border: solid 1px #FFE558;
             border-radius: 20px;
+            background-image: url("/images/check.png");
+            
             
             
             
@@ -130,9 +133,9 @@ body{
             padding: 10px 10px;
         } */
     } 
-images-wrap{
+/* images-wrap{
     position: relative;
-}
+} */
 .next{
     margin-left: 24px;
     font-size: 20px;

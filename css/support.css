@@ -9,6 +9,13 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+
+.back{
+    width: 35px;
+    margin-bottom: -115px;
+    margin-left: 24px;
+}
+
 .circle_wrap{
     display: flex;
     justify-content: center;
@@ -33,7 +40,7 @@ body{
 }
 .support{
     font-size: 16px;
-    margin: 26px 38px 0 0;
+    margin: 15px 38px 0 0;
     margin-left: 24px;
 }
 .choose{
@@ -47,7 +54,7 @@ body{
     align-items: center;
     margin-left: 80px;
     margin-bottom: 25px;
-    margin-top: 38px;
+    margin-top: 30px;
 }
 .wrap{
     margin: 0 24px;

@@ -9,6 +9,13 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+
+.back{
+    width: 35px;
+    margin-bottom: -115px;
+    margin-left: 24px;
+}
+
 .circle_wrap{
     display: flex;
     justify-content: center;

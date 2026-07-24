@@ -9,6 +9,10 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+.back{
+    width: 35px;
+    margin-bottom: -100px;
+}
 .login{
     /* background-color: tomato; */
     text-align: center;

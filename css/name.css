@@ -31,6 +31,10 @@ body{
         
     }
 }
+.back{
+    width: 35px;
+    margin-bottom: -115px;
+}
 
 .welcome{
     /* background-color: tomato; */

@@ -13,8 +13,8 @@
 <body>
     <div class="do-wrap">
         <p class="do zen-maru-gothic-regular">やってみよう！</p>
-        <img src="images/trash.png" alt="ゴミ箱">
-        <img src="images/add.png" alt="追加">
+        <img id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
+        <img id="addBtn" src="images/add.png" alt="追加">
     </div>
 
     <div class="record-wrap">
@@ -65,11 +65,11 @@
         <div class="circle"></div>
     </div>
 
-    <!-- <div class="record-wrap">
+    <div class="record-wrap">
         <img src="images/mugic.png" alt="音楽">
-        <p class="word"></p>
+        <p class="word zen-maru-gothic-regular">音楽を聴く</p>
         <div class="circle"></div>
-    </div> -->
+    </div>
 
         <div class="footer-wrap">
         <div class="home">
@@ -91,6 +91,34 @@
             </a>
         </div>
     </div>
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <p class="zen-maru-gothic-regular">削除してもよろしいですか？</p>
+        <div class="modal-btn">
+            <button class="zen-maru-gothic-regular" id="okBtn">はい</button>
+            <button class="zen-maru-gothic-regular" id="cancelBtn">いいえ</button>
+        </div>
+    </div>
+</div>
 
+
+<div id="sheetBg" class="sheet-bg"></div>
+
+<div id="bottomSheet" class="bottom-sheet">
+    <div class="sheet-bar"></div>
+    <h2 class="sheet-title zen-maru-gothic-regular">
+        どんな項目を追加する？
+    </h2>
+    <input
+        type="text"
+        id="newTask"
+        class="sheet-input zen-maru-gothic-regular"
+        placeholder="例：散歩する">
+    <div class="sheet-button">
+        <button class="zen-maru-gothic-regular" id="addTaskBtn">追加する</button>
+    </div>
+</div>
+
+<script src="javascript/record.js"></script>
 </body>
 </html>

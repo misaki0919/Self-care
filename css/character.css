@@ -119,10 +119,9 @@ body{
             border: solid 1px #FFE558;
             border-radius: 20px;
             background-image: url("/images/check.png");
+            /* background-position: top -10px right -10px; */
             
-            
-            
-            
+        
         }
 
     }

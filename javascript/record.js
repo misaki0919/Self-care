@@ -40,6 +40,10 @@ okBtn.addEventListener("click", () => {
     modal.classList.remove("show");
 });
 
+
+
+
+
 // 追加ボタン
 const addBtn = document.getElementById("addBtn");
 
@@ -91,3 +95,155 @@ addTaskBtn.addEventListener("click", () => {
     bottomSheet.classList.remove("show");
     sheetBg.classList.remove("show");
 });
+
+
+
+
+
+let pressTimer;
+let deleteTarget = null;
+
+
+// =========================
+// 長押しで削除モード
+// =========================
+
+function addLongPress(record){
+    record.addEventListener("touchstart",()=>{
+        pressTimer = setTimeout(()=>{
+            record.classList.toggle("delete-mode");
+        },800);
+    });
+
+    record.addEventListener("touchend",()=>{
+        clearTimeout(pressTimer);
+    });
+
+    // PC用
+    record.addEventListener("mousedown",()=>{
+        pressTimer = setTimeout(()=>{
+            record.classList.toggle("delete-mode");
+        },800);
+    });
+
+
+    record.addEventListener("mouseup",()=>{
+        clearTimeout(pressTimer);
+    });
+}
+
+
+
+// 最初からある項目に適用
+document.querySelectorAll(".record-wrap")
+.forEach(record=>{
+    addLongPress(record);
+});
+
+
+
+
+
+// =========================
+// ゴミ箱を押した時
+// =========================
+
+document.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("delete-icon")){
+        // 削除する項目を保存
+        deleteTarget = e.target.closest(".record-wrap");
+        // モーダル表示
+        document.getElementById("modal")
+        .classList.add("show");
+    }
+});
+
+
+
+
+
+// =========================
+// はい（削除）
+// =========================
+
+document.getElementById("okBtn")
+.addEventListener("click",()=>{
+    if(deleteTarget){
+        deleteTarget.remove();
+    }
+    document.getElementById("modal")
+    .classList.remove("show");
+    deleteTarget = null;
+});
+
+
+
+
+
+// =========================
+// いいえ（キャンセル）
+// =========================
+
+document.getElementById("cancelBtn")
+.addEventListener("click",()=>{
+    document.getElementById("modal")
+    .classList.remove("show");
+    deleteTarget = null;
+});
+
+// let pressTimer;
+
+
+// // 長押し検知
+// document.querySelectorAll(".record-wrap").forEach(record=>{
+
+//     record.addEventListener("touchstart",()=>{
+//         pressTimer = setTimeout(()=>{
+//             record.classList.toggle("delete-mode");
+//         },800);
+//     });
+//     record.addEventListener("touchend",()=>{
+//         clearTimeout(pressTimer);
+//     });
+
+//     // PC用
+//     record.addEventListener("mousedown",()=>{
+//         pressTimer = setTimeout(()=>{
+//             record.classList.toggle("delete-mode");
+//         },800);
+//     });
+
+//     record.addEventListener("mouseup",()=>{
+//         clearTimeout(pressTimer);
+//     });
+// });
+
+// let deleteTarget = null;
+// // 削除ボタン
+// document.addEventListener("click",(e)=>{
+//     if(e.target.classList.contains("delete-icon")){
+//         const target = e.target.closest(".record-wrap");
+        
+//     }
+// });
+
+// // はい
+// document.getElementById("okBtn")
+
+// .addEventListener("click",()=>{
+//     if(deleteTarget){
+//         deleteTarget.remove();
+//     }
+//     document.getElementById("modal")
+//     .classList.remove("show");
+// });
+
+// // いいえ
+
+// document.getElementById("cancelBtn")
+
+// .addEventListener("click",()=>{
+//     document.getElementById("modal")
+//     .classList.remove("show");
+//     deleteTarget = null;
+// });

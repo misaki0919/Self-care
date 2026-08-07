@@ -11,12 +11,12 @@ body{
 }
 .back{
     width: 35px;
-    margin-bottom: -100px;
+    margin-bottom: -60px;
 }
 .login{
     /* background-color: tomato; */
     text-align: center;
-    margin-top: 170px;
+    margin-top: 50px;
     font-size: 32px;
 }
 .mail,
@@ -45,7 +45,7 @@ body{
     margin-top: 10px;
     font-size: 20px;
 }
-.do{
+/* .do{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +57,8 @@ body{
     height: 65px;
     /* line-height: 65px;
     text-align: center; */
-    margin-top: 75px;
-} */
+    /* margin-top: 75px; */
+/* }   */
 
 .do{
 
@@ -74,5 +74,6 @@ body{
     font-size: 24px;
     background-color: #FFE558;
     border-radius: 20px;
-    margin-top: 75px;
+    margin-top: 125px;
+    box-shadow: #7b7b7b 0px 4px 4px 0px;
 }

@@ -12,7 +12,7 @@ body{
 .circle_wrap{
     display: flex;
     justify-content: center;
-    margin-top: 76px;
+    margin-top: 20px;
     gap: 16px;
     align-items: center;
     .diffrent_circle{
@@ -33,7 +33,7 @@ body{
 }
 .back{
     width: 35px;
-    margin-bottom: -115px;
+    margin-bottom: -60px;
 }
 
 .welcome{
@@ -50,7 +50,7 @@ body{
     padding-top: 5px;
     text-align: center;
     width: 206px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding-left: 5px;
 }
 .how_to_call{
@@ -77,7 +77,7 @@ body{
     background-color: #BAE8E8;
     padding: 17px 20px 0;
     height: 193px;
-    margin: 40px 0 120px;
+    margin: 20px 0 90px;
 
 }
 .next{
@@ -91,11 +91,15 @@ body{
     box-shadow: #7b7b7b 0px 4px 4px 0px;
     /* width heightでつける */
     
+    
 }
 .images_wrap{
     position: relative;
     /* width: 382px;
     height: 57px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }

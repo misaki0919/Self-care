@@ -26,11 +26,18 @@
     <p class="reset zen-maru-gothic-regular">後からでも変更できるよ。</p>
     <div class="wrap zen-maru-gothic-regular">
         <p class="how_to_call">あなたのことなんて呼んだらいい？</p>
-        <input type="email" class="textbox" placeholder="ニックネームを入力"> 
+        <input
+            type="text"
+            id="nickname"
+            class="textbox"
+            placeholder="ニックネームを入力">
     </div>
     <div class="images_wrap zen-maru-gothic-regular">
-        <a href="character.html" class="next">つぎへ</a>
+        <button class="next" onclick="nextPage()">
+            つぎへ
+        </button>
         <img class="images" src="images/next.png" alt="画像">
     </div>
+    <script src="javascript/name.js"></script>
 </body>
 </html>

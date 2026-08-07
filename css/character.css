@@ -12,14 +12,14 @@ body{
 
 .back{
     width: 35px;
-    margin-bottom: -115px;
+    margin-bottom: -60px;
     margin-left: 24px;
 }
 
 .circle_wrap{
     display: flex;
     justify-content: center;
-    margin-top: 76px;
+    margin-top: 20px;
     gap: 16px;
     align-items: center;
     .diffrent_circle{
@@ -46,16 +46,16 @@ body{
 }
 .change{
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     background-color: #BAE8E8;
     width: 206px;
     height: 34px;
     border-radius: 20px;
     padding-top: 4px;
-    padding-left: 10px;
+    padding-left: 0;
     margin-left: 100px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 }
 .wrap{
     background-color: #BAE8E8;
@@ -64,8 +64,9 @@ body{
     padding: 0 14px;
     margin-left: 24px;
     margin-right: 24px;
-    padding-bottom: 50px;
-    margin-bottom: 75px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    overflow: visible;
     .which-character{
         text-align: center;
         /* background-color: tomato; */
@@ -80,7 +81,7 @@ body{
         padding:0;
         gap: 28px;
         li{
-            
+            overflow: visible;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -107,6 +108,7 @@ body{
                 text-align:center;
                 cursor:pointer;
                 border-radius:20px;
+                overflow: visible;
             }
         }
         input[type="radio"] + label{
@@ -118,10 +120,22 @@ body{
         input[type="radio"]:checked + label{
             border: solid 1px #FFE558;
             border-radius: 20px;
-            background-image: url("/images/check.png");
+            /* background-image: url("/images/check.png");
+            background-origin: border-box;
             /* background-position: top -10px right -10px; */
-            
-        
+            /* background-repeat: no-repeat;
+            background-position: right top; */ */
+        }
+
+        input[type="radio"]:checked + label::after{
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background: url("/images/check.png") no-repeat center;
+            background-size: contain;
         }
 
     }
@@ -142,6 +156,11 @@ body{
 /* images-wrap{
     position: relative;
 } */
+.images-wrap{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .next{
     margin-left: 24px;
     font-size: 20px;
@@ -159,4 +178,5 @@ body{
     right: 20px;
     /* background-color: tomato; */
     margin-right: 30px;
+    margin-top: 15px;
 }

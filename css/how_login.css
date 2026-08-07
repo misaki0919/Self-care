@@ -37,7 +37,7 @@ body{
     text-align: center;
     font-size: 24px;
     /* padding-right: 24px; */
-    margin-top: 190px;
+    margin-top: 120px;
     border-radius: 20px;
     border: none;
     padding-top: 15px;
@@ -48,7 +48,7 @@ body{
 .here{
     display: block;
     color: #272343;
-    margin-top: 35px;
+    margin-top: 20px;
     font-size: 20px;
     /* background-color: tomato; */
     text-align: center;

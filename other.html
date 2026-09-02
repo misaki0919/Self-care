@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>その他</title>
+    <link href="css/other.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="support.html">
+    <img class="back" src="images/back.png" alt="戻る">
+    </a>
+    <div class="circle_wrap">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="diffrent_circle"></div>
+        <div class="circle"></div>
+    </div>
+<p class="support zen-maru-gothic-regular">他にもサポートしたいことがあったら自由に書いてね。</p>
+<div class="wrap zen-maru-gothic-regular">
+    <p class="title">その他について</p>
+    <div class="textarea_wrap">
+        <textarea maxlength="100" id="other-text"></textarea>
+        <p class="count">
+            <span id="count">0</span>/100
+        </p>
+    </div>
+</div>
+<button type="button" class="save zen-maru-gothic-regular" id="saveButton">
+    保存する
+</button>
+<script>
+    const nextButton = document.getElementById("nextButton");
+    // 保存されているチェック状態を復元
+    const savedItems = JSON.parse(localStorage.getItem("supportItems") || "[]");
+    savedItems.forEach(function(id){
+        const checkbox = document.getElementById(id);
+        if(checkbox){
+            checkbox.checked = true;
+        }
+    });
+    // その他の入力が保存されていたら、その他にもチェックをつける
+    const otherText = localStorage.getItem("otherText");
+    if(otherText){
+        document.getElementById("todo6").checked = true;
+    }
+    // チェックしたら保存
+    const checkboxes = document.querySelectorAll(
+        'input[type="checkbox"]'
+    );
+    checkboxes.forEach(function(checkbox){
+        checkbox.addEventListener("change", function(){
+            const checkedItems = [];
+            checkboxes.forEach(function(item){
+                if(item.checked){
+                    checkedItems.push(item.id);
+                }
+            });
+            localStorage.setItem(
+                "supportItems",
+                JSON.stringify(checkedItems)
+            );
+        });
+    });
+    // つぎへ
+    nextButton.addEventListener("click", function(){
+        const checkedItems = document.querySelectorAll(
+            'input[type="checkbox"]:checked'
+        );
+        if(checkedItems.length === 0){
+            alert("サポートしてほしいことを1つ選んでね！");
+            return;
+        }
+        window.location.href = "support.html";
+    });
+</script>
+</body>
+</html>

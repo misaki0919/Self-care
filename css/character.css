@@ -65,7 +65,7 @@ body{
     margin-left: 24px;
     margin-right: 24px;
     padding-bottom: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     overflow: visible;
     .which-character{
         text-align: center;
@@ -120,11 +120,7 @@ body{
         input[type="radio"]:checked + label{
             border: solid 1px #FFE558;
             border-radius: 20px;
-            /* background-image: url("/images/check.png");
-            background-origin: border-box;
-            /* background-position: top -10px right -10px; */
-            /* background-repeat: no-repeat;
-            background-position: right top; */ */
+            
         }
 
         input[type="radio"]:checked + label::after{

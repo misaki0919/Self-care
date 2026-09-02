@@ -27,46 +27,62 @@
         <ul class="zen-maru-gothic-regular">
             <li>
                 <input type="checkbox" id="todo1">
-                    <label for="todo1">
+                <label for="todo1">
                 薬を飲む
                 </label>
             </li>
             <li>
                 <input type="checkbox" id="todo2">
-                    <label for="todo2">
+                <label for="todo2">
                 早く寝る
                 </label>
             </li>
             <li>
                 <input type="checkbox" id="todo3">
-                    <label for="todo3">
+                <label for="todo3">
                 ウォーキング<br>する
                 </label>
             </li>
             <li>
                 <input type="checkbox" id="todo4">
-                    <label for="todo4">
+                <label for="todo4">
                 日記を書く
                 </label>
             </li>
             <li>
                 <input type="checkbox" id="todo5">
-                    <label for="todo5">
+                <label for="todo5">
                 気持ちを<br>誰かに話す
                 </label>
             </li>
             <li>
                 <input type="checkbox" id="todo6">
-                    <label for="todo6">
-                <a href="time.html">その他</a>
+                <label for="todo6">
+                <a href="other.html">その他</a>
                 </label>
             </li>
         </ul>
     </div>
     <div class="images-wrap">
-        <a href="notice.html" class="next zen-maru-gothic-regular">つぎへ</a>
-        <img class="images" src="images/next.png" alt="画像">
+        <button type="button" id="nextButton" class="next zen-maru-gothic-regular">つぎへ</button>
     </div>
-
+<script>
+    const nextButton = document.getElementById("nextButton");
+    nextButton.addEventListener("click", function(){
+        
+        const checkedItems = document.querySelectorAll(
+            'input[type="checkbox"]:checked'
+        );
+        
+        const otherText = localStorage.getItem("otherText");
+        
+        if(checkedItems.length === 0 && !otherText){
+            alert("サポートしてほしいことを1つ選んでね！");
+            return;
+        }
+        
+        window.location.href = "notice.html";
+    });
+</script>
 </body>
 </html>

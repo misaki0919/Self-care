@@ -1,6 +1,8 @@
 body{
     background-color: #FFFFFE;
     color: #272343;
+    /* padding-bottom: 20px;
+    border: 1px tomato solid; */
     /* padding-left: 24px;
     padding-right: 24px; */
 }
@@ -12,15 +14,15 @@ body{
 
 .back{
     width: 35px;
-    margin-bottom: -115px;
+    margin-bottom: -70px;
     margin-left: 24px;
 }
 
 .circle_wrap{
     display: flex;
     justify-content: center;
-    margin-top: 76px;
-    gap: 28px;
+    margin-top: 30px;
+    gap: 16px;
     align-items: center;
     .diffrent_circle{
         width: 30px;
@@ -40,7 +42,7 @@ body{
 }
 .support{
     font-size: 16px;
-    margin: 15px 38px 0 0;
+    margin: 25px 38px 0 0;
     margin-left: 24px;
 }
 .choose{
@@ -59,10 +61,10 @@ body{
 .wrap{
     margin: 0 24px;
     background-color: #BAE8E8;
-    height: 570px;
+    height: 500px;
     width: 370px;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
     .care{
@@ -78,16 +80,20 @@ body{
         padding:0;
         gap: 25px;
         
+
+        
         li{
             background-color: #FFFFFF;
             display: flex;
             justify-content: center;
             border-radius: 20px;
             list-style: none;
-            height: 140px;
-            width: 150px;
+            height: 120px;
+            width: 130px;
             align-items: center;
             font-size: 20px;
+            margin: 0 10px;
+            gap: -30px;
             a{
                 text-decoration: none;
                 color: #272343;
@@ -116,38 +122,52 @@ body{
         input[type="checkbox"] + label{
             border: solid 1px tomato;
             border: none;
-            width:163px;
-            height: 144px;
+            width:130px;
+            height: 120px;
+            position: relative;
             }
         input[type="checkbox"]:checked + label{
             border: solid 1px #FFE558;
             border-radius: 20px;
+            
+        }
+        input[type="checkbox"]:checked + label::after{
             background-image: url("/images/check.png");
-            }
+            content: "";
+            display: block;
+            top: -10px;
+            right: -10px;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
 
 
-/* images-wrap{
-    position: relative;
-} */
+
 
 .next{
     margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     background-color: #FFE558;
     border-radius: 20px;
-    padding: 16px 155px;
+    /* padding: 16px 155px; */
+    width: 370px;
+    height: 65px;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #272343; 
     box-shadow: #7b7b7b 0px 4px 4px 0px;
+    background-image: url("../images/next.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 30px;
+    margin-bottom: 20px;
 }
 
-.images{
-    width: 30px;
-    position: absolute;
-    right: 20px;
-    /* background-color: tomato; */
-    margin-right: 30px;
-}

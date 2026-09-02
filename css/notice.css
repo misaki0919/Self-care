@@ -3,6 +3,7 @@ body{
     color: #272343;
     /* padding-left: 24px;
     padding-right: 24px; */
+    margin-bottom: 20px;
 }
 .zen-maru-gothic-regular {
     font-family: "Zen Maru Gothic", sans-serif;
@@ -112,7 +113,7 @@ body{
                 cursor:pointer;
                 border-radius:20px;
                 span{
-                    font-size: 16px;
+                    font-size: 14px;
                     /* background-color: tomato; */
                 }
             }
@@ -126,9 +127,22 @@ body{
             input[type="checkbox"]:checked + label{
             border: solid 1px #FFE558;
             border-radius: 20px;
-            background-image: url("/images/check.png");
-
             }
+
+        input[type="checkbox"]:checked + label::after{
+            background-image: url("/images/check.png");
+            content: "";
+            display: block;
+            top: -10px;
+            right: -10px;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+
         }
         }
 

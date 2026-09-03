@@ -1,6 +1,8 @@
 body{
     background-color: #FFFFFE;
     color: #272343;
+    /* height: 120svh; */
+    
     /* padding-left: 24px;
     padding-right: 24px; */
 }
@@ -34,6 +36,8 @@ body{
     
 }
 
+
+
 .record-wrap.delete-mode .circle{
     visibility:hidden;
 }
@@ -57,7 +61,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 45px;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 0 24px;
 }
 
@@ -67,8 +71,8 @@ body{
 }
 
 .do-wrap img{
-    width: 54px;
-    height: 40px;
+    /* width: 50px;
+    height: 40px; */
     cursor: pointer;
 
 }
@@ -78,7 +82,13 @@ body{
     height: auto;
     margin-left: -12px;
 }
-
+.save{
+    color: #000000;
+    font-size: 18px;
+    background-color: #FFE558;
+    padding: 7px 7px;
+    border-radius: 20px;
+}
 
 .record-wrap{
     width: 382px;
@@ -328,3 +338,42 @@ body{
     color: #272343;
     cursor: pointer;
 }
+
+
+/* =========================
+   チェックマーク
+========================= */
+
+.circle{
+    width:28px;
+    height:28px;
+    border:3px solid #272343;
+    border-radius:50%;
+    margin-left:auto;
+    cursor:pointer;
+    position:relative;
+}
+
+
+/* チェックされた状態 */
+
+.circle.checked{
+    background:#FFE558;
+}
+
+
+/* チェックマーク */
+
+.circle.checked::after{
+    content:"✓";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:
+        translate(-50%, -55%);
+    font-size:20px;
+    font-weight:bold;
+    color:#272343;
+}
+
+

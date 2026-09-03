@@ -12,73 +12,83 @@
 </head>
 <body>
     <div class="do-wrap">
+
         <p class="do zen-maru-gothic-regular">やってみよう！</p>
         <!-- <img id="deleteBtn" src="images/trash.png" alt="ゴミ箱"> -->
         <img id="addBtn" src="images/add.png" alt="追加">
+        <!-- 記録を保存するボタン -->
+        <div class="save-wrap">
+            <button
+                class="save zen-maru-gothic-regular"
+                onclick="saveRecord()">
+            記録する
+            </button>
+    </div>
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="music">
         <img src="images/mugic.png" alt="音楽">
-        <p class="word zen-maru-gothic-regular">好きな音楽を聴く</p>
+        <p class="word zen-maru-gothic-regular">好きな音楽を3回聴く</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="breath">
         <img src="images/open-mouth.png" alt="深呼吸">
-        <p class="word zen-maru-gothic-regular">深呼吸する</p>
+        <p class="word zen-maru-gothic-regular">3回深呼吸する</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="talk">
         <img src="images/talk.png" alt="話す">
         <p class="word zen-maru-gothic-regular">気持ちを誰かに話す</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="bath">
         <img src="images/bath.png" alt="お風呂">
         <p class="word zen-maru-gothic-regular">ゆっくりお風呂に入る</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="sweet">
         <img src="images/sweet.png" alt="スイーツ">
         <p class="word zen-maru-gothic-regular">甘いもの食べる</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="sleep">
         <img src="images/sleep.png" alt="寝る">
         <p class="word zen-maru-gothic-regular">十分な睡眠をとる</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="diary">
         <img src="images/diary.png" alt="日記">
-        <p class="word zen-maru-gothic-regular">日記を書く</p>
+        <p class="word zen-maru-gothic-regular">今日の日記を書く</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="drink">
         <img src="images/drink.png" alt="飲み物">
-        <p class="word zen-maru-gothic-regular">水分補給をする</p>
+        <p class="word zen-maru-gothic-regular">3回水分補給をする</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
 
-    <div class="record-wrap">
+    <div class="record-wrap" data-task="music">
         <img src="images/mugic.png" alt="音楽">
         <p class="word zen-maru-gothic-regular">音楽を聴く</p>
         <div class="circle"></div>
         <img class="delete-icon" id="deleteBtn" src="images/trash.png" alt="ゴミ箱">
     </div>
+
 
         <div class="footer-wrap">
         <div class="home">

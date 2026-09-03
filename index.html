@@ -21,6 +21,14 @@
         </section>
         <section class="images-wrap-2">
             <img class="white-1" src="images/Rectangle 5.png" alt="白">
+
+            <div class="gauge-info">
+                <span class="zen-maru-gothic-regular" id="gaugeCount">0/</span>
+                <span class=" zen-maru-gothic-regular">3</span>
+            </div>
+            <p class="level zen-maru-gothic-regular" id="levelText">
+                LEVEL1
+            </p>
             <img class="yellow" src="images/Vector 1.png" alt="黄色">
         </section>
     </div>
@@ -30,25 +38,40 @@
         <p class="time zen-maru-gothic-regular" >薬の時間だよ。</p>
     </div>
 
-    <img class="img" src="images/big_sowan.png" alt="ソワンちゃん">
+    <img class="img" id="character" src="images/big_sowan.png" alt="ソワンちゃん">
     <p class="name zen-maru-gothic-regular">みさき</p>
 
     <div class="continue-wrap">
         <img src="images/Vector.png" alt="炎">
-        <p class="continue zen-maru-gothic-regular">3日<br>連続</p>
+        <p class="continue zen-maru-gothic-regular">
+            <span id="streak">0</span>回<br>
+            連続</p>
     </div>
 
     <div class="did-wrap">
         <img src="images/kira.png" alt="ダイヤモンド">
-        <p class="did zen-maru-gothic-regular">60回<br>やった回数</p>
+        <p class="did zen-maru-gothic-regular">
+            <span id="totalCount">0</span>回<br>やった回数</p>
     </div>
 
     <div class="record-wrap">
-        <a href="record.html">
+        <a href="record.html" id="recordButton">
             <img src="images/smile.png" alt="笑顔">
             <p class="today-record zen-maru-gothic-regular">今日やったことを記録しよう！</p>
         </a>
     </div>
+
+    <div class="clear-modal" id="clearModal">
+        <div class="clear-content">
+            <div class="confetti">🎉</div>
+            <h2 class="zen-maru-gothic-regular">おめでとう！</h2>
+            <p id="clearMessage" class="zen-maru-gothic-regular">ゲージがいっぱいになったよ！</p>
+            <img id="changeCharacter" src="images/chenge_sowann.png" alt="変化したソワンちゃん">
+            <p class="change-text" id="changeText">ソワンちゃんに変化があったよ！</p>
+            <button id="closeModal">やった！</button>
+        </div>
+    </div>
+
 
     <div class="footer-wrap">
         <div class="home">
@@ -72,5 +95,8 @@
     </div>
 
 
+
+<script src="javascript/index.js"></script>
+<script src="javascript/home.js"></script>
 </body>
 </html>

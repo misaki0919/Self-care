@@ -194,7 +194,7 @@ document.getElementById("cancelBtn")
 // let pressTimer;
 
 
-// // 長押し検知
+// 長押し検知
 // document.querySelectorAll(".record-wrap").forEach(record=>{
 
 //     record.addEventListener("touchstart",()=>{
@@ -247,3 +247,186 @@ document.getElementById("cancelBtn")
 //     .classList.remove("show");
 //     deleteTarget = null;
 // });
+
+
+
+
+/* =========================
+   記録画面
+========================= */
+
+
+/* --------------------------------
+   チェックマークを押す
+-------------------------------- */
+
+// const circles = document.querySelectorAll(".circle");
+
+// circles.forEach((circle) => {
+
+//     circle.addEventListener("click", () => {
+
+//         circle.classList.toggle("checked");
+
+//     });
+
+// });
+
+
+// /* --------------------------------
+//    記録するボタン
+// -------------------------------- */
+
+// function saveRecord(){
+
+//     /*
+//         チェックされた項目を取得
+//     */
+
+//     const checkedItems =
+//         document.querySelectorAll(".circle.checked");
+
+
+//     /*
+//         何も選んでいない場合
+//     */
+
+//     if(checkedItems.length === 0){
+
+//         alert("やったことを1つ選んでね！");
+
+//         return;
+
+//     }
+
+
+//     /*
+//         記録完了
+
+//         index.jsの処理を呼ぶ
+//     */
+
+//     completeRecord();
+
+
+//     /*
+//         選択した項目を消す
+//     */
+
+//     checkedItems.forEach((circle) => {
+
+//         const record =
+//             circle.closest(".record-wrap");
+
+//         if(record){
+
+//             record.remove();
+
+//         }
+
+//     });
+
+
+//     /*
+//         少し待ってホームへ
+//     */
+
+//     setTimeout(() => {
+
+//         location.href = "index.html";
+
+//     }, 500);
+
+// }
+
+
+
+
+
+/* =========================
+   記録画面
+========================= */
+
+
+/* =========================
+   チェックボタン
+========================= */
+
+// const circles =
+//     document.querySelectorAll(".circle");
+
+
+// circles.forEach((circle) => {
+
+//     circle.addEventListener("click", () => {
+
+//         circle.classList.toggle("checked");
+
+//     });
+
+// });
+
+
+// /* =========================
+//    記録するボタン
+// ========================= */
+
+// function saveRecord(){
+
+//     /* チェックされた項目 */
+//     const checkedItems =
+//         document.querySelectorAll(".circle.checked");
+
+
+//     /* 何もチェックしていない */
+//     if(checkedItems.length === 0){
+
+//         alert("やったことを1つ選んでね！");
+
+//         return;
+//     }
+
+
+//     /* =========================
+//        記録を保存
+//     ========================= */
+
+//     const success = completeRecord();
+
+
+//     /* 今日すでに記録していた場合 */
+//     if(!success){
+
+//         return;
+//     }
+
+
+//     /* =========================
+//        チェックした項目を消す
+//     ========================= */
+
+//     checkedItems.forEach((circle) => {
+
+//         const record =
+//             circle.closest(".record-wrap");
+
+
+//         if(record){
+
+//             record.remove();
+//         }
+
+//     });
+
+
+//     /* =========================
+//        index.htmlへ戻る
+//     ========================= */
+
+//     setTimeout(() => {
+
+//         location.href = "index.html";
+
+//     }, 300);
+
+// }
